@@ -19,6 +19,6 @@ if [ "$HTTP_STATUS" -eq 200 ]; then
     echo "🌐 Endpoint: http://localhost:8000"
     exit 0
 else
-    echo "❌ Pet Store no está respondiendo (HTTP $HTTP_STATUS)"
+    echo "❌ Chatbot is not running (HTTP $HTTP_STATUS)"
     exit 1
 fi
