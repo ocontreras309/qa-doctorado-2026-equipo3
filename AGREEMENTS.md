@@ -2,13 +2,22 @@
 
 ## Objetivos del Proyecto
 
-[Definir los objetivos principales del proyecto de QA]
+### Objetivo general
+
+- Implementar pruebas de calidad de software para un chatbot inteligente de asistencia a usuarios de un instituto.
+
+### Objetivos específicos
+
+- Definir el sistema bajo prueba (SUT)
+- Diseñar e implementar los casos de prueba
+- Recolectar evidencias de las pruebas ejecutadas
+- Elaborar un análisis y reporte final
 
 ## Directrices de Comunicación
 
-- Reuniones diarias: [Hora y formato]
-- Retrospectivas semanales: [Horario]
-- Estándares de documentación: [Especificar formato y herramientas]
+- Reuniones diarias: 20:00 vía Google Meet
+- Retrospectivas semanales: 15:00
+- Estándares de documentación: Bitácoras generadas en documentos md
 
 ## Estándares de Calidad
 
@@ -25,4 +34,4 @@
 
 ## Resolución de Conflictos
 
-[Definir proceso para manejar desacuerdos y rutas de escalamiento]
+- Por consenso con todos los miembros del equipo
