@@ -1,4 +1,4 @@
-# SUT_SELECTION.md — Swagger Petstore
+# SUT_SELECTION.md — Chatbot
 
 ## SUT elegido
 - Nombre: Chatbot para asistencia a usuarios de cursos de un instituto
