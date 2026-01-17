@@ -24,9 +24,9 @@ Este repositorio contiene todo el trabajo y documentación para el proyecto QA D
 
 Revisar los acuerdos de equipo. [Agreements](./AGREEMENTS.md)
 
-## Instalación docker
+## Instalación del SUT
 
-Requiere un entorno con docker instalado. [Instalación](https://docs.docker.com/engine/install)
+Las instrucciones de instalación de encuentran en [Instalación](https://github.com/ocontreras309/ChatBotProject)
 
 ### Instrucciones de ejecución del proyecto
 

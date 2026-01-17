@@ -1,21 +1,15 @@
 #!/bin/bash
-# Script de Detención de la Aplicación Pet Store
+# Stop Chatbot app
 
-echo "Deteniendo aplicación Pet Store..."
+PID_FILE="./ChatBotProject/chatbot.pid"
 
-# Detener y eliminar el contenedor de Pet Store
-if docker ps | grep -q petstore; then
-    echo "Deteniendo contenedor de Pet Store..."
-    docker stop petstore
-    echo "Eliminando contenedor de Pet Store..."
-    docker rm petstore
-    echo "Pet Store detenido exitosamente"
-else
-    echo "El contenedor de Pet Store no está en ejecución"
+if [ ! -f "$PID_FILE" ]; then
+    echo "PID file not available."
+    exit 1
 fi
 
-# Limpiar imágenes huérfanas (opcional)
-echo "Limpiando..."
-docker image prune -f > /dev/null 2>&1
+echo "Stopping Chatbot app..."
 
-echo "Limpieza completada"
+kill $(cat $PID_FILE)
+
+echo "Application stopped."

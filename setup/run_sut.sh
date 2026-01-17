@@ -1,29 +1,30 @@
 #!/bin/bash
-# Script de Inicio de la Aplicación Pet Store
+# Startup script for Chatbot application
 
-echo "Iniciando aplicación Pet Store..."
+echo "Starting Chatbot app..."
 
-# Verificar si Docker está en ejecución
-if ! docker info > /dev/null 2>&1; then
-    echo "Docker no está en ejecución. Por favor inicia Docker primero."
-    exit 1
-fi
+SUT_DIR="./ChatBotProject"
 
-# Descargar y ejecutar el contenedor de Pet Store
-echo "Descargando imagen de Pet Store..."
-docker pull swaggerapi/petstore3:unstable
-
-echo "Iniciando contenedor de Pet Store..."
-docker run -d --name petstore -p 8080:8080 swaggerapi/petstore3:unstable
-
-# Esperar un momento para que el contenedor inicie
-sleep 5
-
-# Verificar si el contenedor está en ejecución
-if docker ps | grep -q petstore; then
-    echo "Pet Store iniciado exitosamente en http://localhost:8080"
-    echo "Documentación de la API disponible en: http://localhost:8080"
+if [ -d "$SUT_DIR" ]; then
+    echo "Updating ChatBot project..."
+    cd ./ChatBotProject
+    git pull origin master
 else
-    echo "Falló al iniciar Pet Store"
-    exit 1
+    echo "Downloading ChatBot project..."
+    git clone https://github.com/ocontreras309/ChatBotProject.git
+    cd ./ChatBotProject
 fi
+
+read -p "OpenAI Key: " KEY
+
+if [ ! -d "./venv" ]; then
+    python3 -m venv venv
+fi
+
+source venv/bin/activate
+pip install -r requirements.txt
+export OPENAI_API_KEY=$KEY
+gunicorn backend:app --daemon --pid chatbot.pid
+
+echo "Chatbot application started!"
+echo "You can go to http://localhost:8000 to see the UI"

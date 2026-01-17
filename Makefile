@@ -6,8 +6,8 @@
 help:
 	@echo "Objetivos disponibles:"
 	@echo "  setup          - Configurar el entorno"
-	@echo "  start-petstore - Iniciar la aplicación Pet Store"
-	@echo "  stop-petstore  - Detener la aplicación Pet Store"
+	@echo "  start-chatbot  - Iniciar la aplicación del Chatbot"
+	@echo "  stop-chatbot   - Detener la aplicación del Chatbot"
 	@echo "  healthcheck    - Verificar la salud del sistema"
 	@echo "  smoke          - Ejecutar pruebas de humo"
 	@echo "  test-latency   - Medir la latencia del sistema"
@@ -18,10 +18,10 @@ setup:
 	chmod +x setup/*.sh scripts/*.sh
 	./setup/run_sut.sh
 
-start-petstore:
+start-chatbot:
 	./setup/run_sut.sh
 
-stop-petstore:
+stop-chatbot:
 	./setup/stop_sut.sh
 
 healthcheck:
