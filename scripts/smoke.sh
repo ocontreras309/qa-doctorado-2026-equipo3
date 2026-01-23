@@ -1,34 +1,16 @@
 #!/bin/bash
-# Suite de smoke test para la aplicación Pet Store
+# Suite de smoke test para la aplicación Chatbot
 
-echo "Ejecutando smoke test para Pet Store..."
+source ./scripts/common.sh
 
-BASE_URL="http://localhost:8080/api/v3"
+echo "Ejecutando smoke test para Chatbot..."
+
+BASE_URL="http://localhost:8000/"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-RESULTS_FILE="evidence/smoke_test_$TIMESTAMP.log"
+RESULTS_FILE="evidence/week2/smoke_test_$TIMESTAMP.log"
 
 # Crear directorio de resultados si no existe
-mkdir -p evidence
-
-# Función para probar un endpoint
-test_endpoint() {
-    local endpoint=$1
-    local expected_status=$2
-    local description=$3
-    
-    echo "Probando: $description"
-    local status=$(curl -s -o /dev/null -w "%{http_code}" "$BASE_URL$endpoint")
-    
-    if [ "$status" -eq "$expected_status" ]; then
-        echo "✅ ÉXITO: $description (HTTP $status)"
-        echo "EXITO: $description (HTTP $status)" >> "$RESULTS_FILE"
-        return 0
-    else
-        echo "❌ FALLO: $description (Esperado $expected_status, obtenido $status)"
-        echo "FALLO: $description (Esperado $expected_status, obtenido $status)" >> "$RESULTS_FILE"
-        return 1
-    fi
-}
+mkdir -p evidence/week2
 
 # Inicializar archivo de resultados
 echo "Resultados de Pruebas de Humo - $TIMESTAMP" > "$RESULTS_FILE"
@@ -38,32 +20,52 @@ echo "================================" >> "$RESULTS_FILE"
 TOTAL_TESTS=0
 PASSED_TESTS=0
 
-# Prueba 1: Especificación OpenAPI
-test_endpoint "/openapi.json" 200 "Endpoint de Especificación OpenAPI"
+# Prueba 1: Devuelve código 200 al visitar la página principal
+test_basic_endpoint "GET" "/" 200 "Visita de la página principal del SUT"
 RESULT=$?
 TOTAL_TESTS=$((TOTAL_TESTS + 1))
 if [ $RESULT -eq 0 ]; then
     PASSED_TESTS=$((PASSED_TESTS + 1))
 fi
 
-# Prueba 2: Obtener mascotas por estado
-test_endpoint "/pet/findByStatus?status=available" 200 "Buscar mascotas por estado"
+# Prueba 2: Endpoint inválido (debería retornar 404)
+test_basic_endpoint "GET" "/invalid/endpoint" 404 "Endpoint inválido (prueba negativa)"
 RESULT=$?
 TOTAL_TESTS=$((TOTAL_TESTS + 1))
 if [ $RESULT -eq 0 ]; then
     PASSED_TESTS=$((PASSED_TESTS + 1))
 fi
 
-# Prueba 3: Obtener inventario de tienda
-test_endpoint "/store/inventory" 200 "Endpoint de inventario de tienda"
+# Prueba 3: Invocación al endpoint /chat debe retornar código 200 (retorno de código 200)
+
+test_basic_endpoint "POST" "/chat" 200 "Envío de datos al modelo" '{"data": "hola"}' "application/json"
 RESULT=$?
 TOTAL_TESTS=$((TOTAL_TESTS + 1))
 if [ $RESULT -eq 0 ]; then
     PASSED_TESTS=$((PASSED_TESTS + 1))
 fi
 
-# Prueba 4: Endpoint inválido (debería retornar 404)
-test_endpoint "/invalid/endpoint" 404 "Endpoint inválido (prueba negativa)"
+# Prueba 4: Invocación al endpoint /chat debe retornar {"content": "..."} (retorno de respuesta)
+
+test_advanced_endpoint "POST" "/chat" '{"content":' "Envío de datos al modelo" '{"data": "hola"}' "application/json"
+RESULT=$?
+TOTAL_TESTS=$((TOTAL_TESTS + 1))
+if [ $RESULT -eq 0 ]; then
+    PASSED_TESTS=$((PASSED_TESTS + 1))
+fi
+
+# Prueba 5: Invocación al endpoint /chatmemory debe retornar código 200 (retorno de código 200)
+
+test_basic_endpoint "POST" "/chatmemory" 200 "Envío de datos al modelo" '{"data": "hola"}' "application/json"
+RESULT=$?
+TOTAL_TESTS=$((TOTAL_TESTS + 1))
+if [ $RESULT -eq 0 ]; then
+    PASSED_TESTS=$((PASSED_TESTS + 1))
+fi
+
+# Prueba 6: Invocación al endpoint /chatmemory debe retornar {"content": "..."} (retorno de respuesta)
+
+test_advanced_endpoint "POST" "/chatmemory" '{"content":' "Envío de datos al modelo" '{"data": "hola"}' "application/json"
 RESULT=$?
 TOTAL_TESTS=$((TOTAL_TESTS + 1))
 if [ $RESULT -eq 0 ]; then
