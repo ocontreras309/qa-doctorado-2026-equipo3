@@ -71,9 +71,10 @@ No se consideraron aspectos de seguridad en la elaboración de las pruebas.
 ## Slide 3 — Método formalizado (¿cómo trabajamos para definir escenarios?.)
 **Proceso aplicado:**
 1) Se definió el sistema bajo pruebas (SUT), que es un sistema chatbot basado en la plataforma de OpenAI.
-2) De acuerdo al manifiesto ágil, se definió una planificación para reuniones, objetivos por cada un reunión, resultados esperados y manejo de conflictos.
+2) Se preparó un entorno que permita automatizar las pruebas desarrolladas.
 3) Se definieron una serie de escenarios de prueba para el SUT: Requisitos mínimos de correctitud y cobertura de las pruebas ejecutadas.
 4) Generación de scripts para automatizar las pruebas de humo del software desarrollado.
+5) De acuerdo al manifiesto ágil, se definió una planificación para reuniones, objetivos por cada un reunión, resultados esperados y manejo de conflictos.
 
 
 **Fuentes para definición de método:**
