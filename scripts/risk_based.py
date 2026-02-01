@@ -76,4 +76,4 @@ if __name__ == '__main__':
         results = check_latency(f'{SERVER_URL}/chatmemory')
 
         for i, result in enumerate(results):
-            f.write(f'{i + 1},{result}\n')
+            f.write(f'{i + 1},{result},{'PASS' if result <= 2 else 'FAIL'}\n')
