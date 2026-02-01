@@ -23,9 +23,9 @@ Durante la Semana 3 se alcanzaron los siguientes logros:
 - Se creó una **matriz de riesgos**, identificando riesgos funcionales y de robustez del chatbot.
 - Se definió el **Top 3 de riesgos priorizados**, considerando impacto al usuario y probabilidad de ocurrencia.
 - Se documentó una **estrategia de pruebas basada en riesgo**, enfocada principalmente en:
-  - Manejo de entradas inválidas.
+  - Escalabilidad cuando acceden varios usuarios.
   - Respuestas fuera del dominio definido.
-  - Consistencia en las respuestas del chatbot.
+  - Disponibilidad del servicio.
 - Se generaron **evidencias de prueba estructuradas**, simulando salidas del chatbot en formato JSON.
 - Las evidencias fueron **vinculadas explícitamente a los riesgos identificados**, asegurando trazabilidad entre riesgo y prueba.
 
@@ -36,9 +36,9 @@ Durante la Semana 3 se alcanzaron los siguientes logros:
 La evidencia principal de esta semana incluye:
 
 - Evidencias de salida del chatbot almacenadas en:
-- Archivos de registro (`.log` / `.json` / `.csv`) que documentan:
+- Archivos de registro (`.log` / `.csv`) que documentan:
 - Respuestas exitosas (`status_code = 200`)
-- Respuestas ante entradas inválidas o fuera de dominio
+- Respuestas cuando varios usuarios hacen preguntas al chatbot
 - Estrategia de pruebas documentada y alineada a los riesgos priorizados.
 
 ---

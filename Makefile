@@ -30,6 +30,9 @@ healthcheck:
 smoke:
 	./scripts/smoke.sh
 
+riskbased:
+	./scripts/riskbased.sh
+
 clean:
 	rm -rf tmp/
 	rm -f *.log

@@ -1,0 +1,4 @@
+PASS, prompt: ['Usuario 1', '¿Qué precio tiene el curso de Python'], response: El precio del curso de Python es de 200 Bs.
+PASS, prompt: ['Usuario 2', '¿Dónde queda el instituto?'], response: El instituto está ubicado en Av. América Este. Edificio Ferrara Piso 1 Oficina 2, en la ciudad de Cochabamba, Bolivia.
+PASS, prompt: ['Usuario 2', '¿Qué precio tiene el curso de robótica?'], response: El precio del curso de Robótica es de 300 Bs.
+FAIL, prompt: ['Usuario 1', '¿Y cuándo empieza?'], response: El curso de Robótica comienza el 11 de septiembre.
