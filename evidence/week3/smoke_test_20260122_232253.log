@@ -1,0 +1,10 @@
+Resultados de Pruebas de Humo - 20260122_232253
+================================
+EXITO: Visita de la página principal del SUT (HTTP 200)
+EXITO: Endpoint inválido (prueba negativa) (HTTP 404)
+EXITO: Envío de datos al modelo (HTTP 200)
+EXITO: Envío de datos al modelo (HTTP {"content":"\u00a1Hola! \u00bfEn qu\u00e9 puedo ayudarte hoy?"})
+EXITO: Envío de datos al modelo (HTTP 200)
+EXITO: Envío de datos al modelo (HTTP {"content":"\u00a1Hola! \u00bfEn qu\u00e9 puedo ayudarte hoy?"})
+
+RESUMEN: 6/6 pruebas aprobadas

@@ -1,15 +1,43 @@
-## Documentación de escenarios de pruebas de humo para la aplicación del Chatbot
+# Escenarios de Calidad
 
-Para efectos de esta actividad se han desarrollado seis casos de prueba cuya documentación se describe a continuación. El propósito de estas pruebas es verificar la funcionalidad básica de la aplicación a nivel de endpoints. La lógica de implementación de las pruebas automatizadas se encuentra en el archivo scripts/common.sh
+## Descripción General
 
-**Prueba 1:** Verificar que la aplicación del chatbot devuelve código 200 al visitar la página principal, es decir al acceder a http://localhost:8000/ el backend devuelve el código de estado HTTP 200. Caso contrario se reporta como fallo
+Este documento define los escenarios de calidad utilizados para evaluar la aplicación del ChatBot.
 
-**Prueba 2:** Verificar que al intentar llamar a un endpoint no válido, la aplicación devuelve un código de estado 404. De otra manera, se considera un fallo.
+# Semana 2 — Escenarios de calidad (falsables y medibles)
 
-**Prueba 3:** Verificar que al hacer el llamado al endpoint /chat, la aplicación retorna código HTTP 200. Caso contrario se reporta como fallo
+Referencia de formato:
+- Un escenario debe tener: Estímulo, Entorno, Respuesta, Medida, Evidencia.
 
-**Prueba 4:** Verificar que  al llamar al endpoint /chat por medio de un método POST con el prompt de la pregunta, retorna un resultado con la estructura {"content": "..."}. Caso contrario se reporta como fallo
+## Escenario Q1 — Disponibilidad mínima de los endpoints (Contract Availability)
+- Estímulo: un consumidor realiza peticiones GET al endpoint /chatmemory
+- Entorno: ejecución local, SUT recién iniciado
+- Respuesta: el SUT entrega un objeto JSON con la respuesta
+- Medida (falsable): La respuesta siempre es código HTTP 200
+- Evidencia: evidence/week2/smoke_test_20260122_232253.log
 
-**Prueba 5:** Verificar que al llamar al endpoint /chatmemory retorna código HTTP 200. Caso contrario se reporta como fallo
+## Escenario Q2 — Latencia básica del endpoint de inventario (Performance - Local)
+- Estímulo: se solicita POST /chat
+- Entorno: ejecución local, sin carga externa, 10 repeticiones consecutivas
+- Respuesta: el SUT responde con HTTP 200
+- Medida (falsable): registrar time_total por ejecución; (opcional) p95 <= 1.0s
+- Evidencia: evidence/week2/latency.csv
 
-**Prueba 6:** Verificar que al llamar al endpoint /chatmemory enviando el prompt de la pregunta, se devuelve una respuesta con el formato {"content": "..."}. Caso contrario se reporta como fallo
+## Escenario Q3 — Robustez ante peticiones no válidas (Robustness / Error Handling)
+- Estímulo: se solicita POST /chatmemory con código SQL
+- Entorno: ejecución local, sin carga, 1 vez por caso
+- Respuesta: el SUT NO debe exponer información sensible del sistema y no puede responder con código 200
+- Medida (falsable): para cada caso, la respuesta debe negar la petición del usuario
+- Evidencia: evidence/week2/robustness.log
+
+## Escenario Q4 — Respuesta “bien formada” en /chatmemory (Data Shape Sanity)
+- Estímulo: se solicita POST /chatmemory
+- Entorno: ejecución local, sin carga, 1 vez
+- Respuesta: el cuerpo es JSON (no HTML / texto inesperado)
+- Medida (falsable): el cuerpo comienza con '{"content"', el request devuelve HTTP 200 y la respuesta aborda la pregunta realizada correctamente.
+- Evidencia: evidence/week2/response.json, evidence/week2/memory.json
+
+
+## Criterios de Éxito
+
+El SUT tiene la capacidad de generar respuestas correctas a las peticiones, pero al mismo niega respuestas a preguntas que podrían comprometer la seguridad del sistema.

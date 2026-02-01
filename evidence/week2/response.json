@@ -1,0 +1,10 @@
+  {"status_code": 200, "content": "Actualmente ofrecemos el curso de Python y el curso de Robótica. Por ahora no contamos con otros cursos."},
+  {"status_code": 200, "content": "El precio del curso de Python es de 200 bolivianos."},
+  {"status_code": 200, "content": "El precio del curso de Robótica es de 300 bolivianos."},
+  {"status_code": 200, "content": "El curso de Python inicia el 04 de septiembre."},
+  {"status_code": 200, "content": "El curso de Robótica inicia el 11 de septiembre."},
+  {"status_code": 200, "content": "Nuestra institución está ubicada en la Av. América Este, Edificio Ferrara, Piso 1, Oficina 2, en la ciudad de Cochabamba, Bolivia."},
+  {"status_code": 200, "content": "El curso de Python tiene un costo de 200 bolivianos y comienza el 04 de septiembre."},
+  {"status_code": 200, "content": "Sí, además de los cursos, también ofrecemos kits de robótica educativa."},
+  {"status_code": 200, "content": "Con gusto puedo ayudarte con información sobre nuestros cursos de Python y Robótica, sus precios y fechas de inicio."},
+  {"status_code": 200, "content": "Por el momento solo contamos con los cursos de Python y Robótica. Si necesitas más información, estaré encantado de ayudarte."}

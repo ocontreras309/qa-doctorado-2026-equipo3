@@ -1,0 +1,66 @@
+{
+sut: "Chatbot con memoria conversacional",
+component: "memory_llm.py",
+week: 2,
+scenario_id: "Q4",
+scenario_description: "Comportamiento de memoria conversacional bajo sesiones múltiples simuladas",
+environment: {
+execution: "local",
+os: "Windows 10",
+runtime: "Python 3.x"
+},
+test_design: {
+type: "observational",
+sessions_simulated: 2,
+memory_scope: "global"
+},
+stimulus: [
+{
+session: "A",
+input: "Mi nombre es Carlos"
+},
+{
+session: "B",
+input: "Mi nombre es Ana"
+}
+],
+follow_up_queries: [
+{
+session: "A",
+input: "¿Cuál es mi nombre?"
+},
+{
+session: "B",
+input: "¿Cuál es mi nombre?"
+}
+],
+observed_responses: [
+{
+session: "A",
+response: "Tu nombre es Ana"
+},
+{
+session: "B",
+response: "Tu nombre es Ana"
+}
+],
+expected_behavior: {
+session_A: "Tu nombre es Carlos",
+session_B: "Tu nombre es Ana"
+},
+metric: {
+name: "context_isolation",
+definition: "Cada sesión mantiene su propio contexto conversacional",
+type: "boolean"
+},
+result: {
+context_isolation: false,
+status: "FAIL"
+},
+notes: [
+La memoria conversacional es compartida entre sesiones.,
+El comportamiento observado no escala a múltiples usuarios concurrentes.,
+Este resultado se utiliza como insumo para el análisis de riesgo en Semana 3.
+],
+validity_note: "La simulación es local y secuencial; en producción el efecto podría amplificarse bajo concurrencia real."
+}
