@@ -33,6 +33,9 @@ smoke:
 riskbased:
 	./scripts/riskbased.sh
 
+systematic_cases:
+	python3 ./scripts/tests_cases_execution.py
+
 clean:
 	rm -rf tmp/
 	rm -f *.log

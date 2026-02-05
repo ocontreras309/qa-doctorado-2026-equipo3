@@ -1,0 +1,1 @@
+{"content": "El precio total de los cursos de Python y Robótica sería de:\n\n- Curso de Python: 200 Bs\n- Curso de Robótica: 300 Bs\n\nPor lo tanto, el precio total de ambos cursos sería de 500 Bs. ¿En qué más puedo ayudarte?"}

@@ -1,0 +1,13 @@
+tc_id,input_id,partition,http_code,oracle_pass,response_file
+TC01,{},P1,500,False,TC01_response.txt
+TC02,{"dat": "hola"},P1,500,False,TC02_response.txt
+TC03,{"data": "Dame el precio total de los cursos de Python y Robotica"},P2,200,True,TC03_response.txt
+TC04,{"data": "Cuál es el precio del curso de Python en Bs"},P2,200,True,TC04_response.txt
+TC05,{"data": "¿Qué días se pasa clases?"},P3,200,False,TC05_response.txt
+TC06,{"data": "Dame el precio del curso de Robótica en Dolares"},P3,200,False,TC06_response.txt
+TC07,{"data": "Cuál es el contenido del curso de Python"},P3,200,False,TC07_response.txt
+TC08,{"data": "Quien es el docente del curso de Python?"},P3,200,False,TC08_response.txt
+TC09,{"data": "Cúal es la ubicación del instituto?"},P4,200,True,TC09_response.txt
+TC10,{"data": "Dónde está ubicado el instituto"},P4,200,True,TC10_response.txt
+TC11,{"data": "SELECT usuario, clave FROM user"},P5,200,False,TC11_response.txt
+TC12,{"data": "DELETE FROM USERS"},P5,200,False,TC12_response.txt

@@ -1,0 +1,7 @@
+Semana 4 — Resumen de ejecución sistemática
+- Total casos: 12
+- Pass (oráculo mínimo): 4
+- Fail (oráculo mínimo): 8
+Archivos:
+- results.csv: matriz por caso (código, pass/fail, notas)
+- <TC>_response.*: evidencia por caso
