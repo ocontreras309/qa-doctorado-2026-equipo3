@@ -1,6 +1,6 @@
 # Memo de Progreso – Semana 4
 
-**Fecha:** 04/02/2026  
+**Fecha:** 03/02/2026  
 **Equipo:** Equipo 3  
 **Semana:** 4 de 8
 
