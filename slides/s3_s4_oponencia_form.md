@@ -13,17 +13,17 @@
 ## 1) Estructura de la intervención (plantilla)
 
 ### A. Fortalezas (máx. 2)
-- Fortaleza 1: ___ (por qué es defendible)
-- Fortaleza 2: ___ (por qué mejora trazabilidad o calidad metodológica)
+- Fortaleza 1: Coherencia metodologicas en la gestion de riesgos, se aprecia la trazabilidad entre los riesgos y sus residuales
+- Fortaleza 2: Hay evidencias de todos los casos de pruebas ejecutados para verificar la reproducibilidad del experimento
 
 ### B. Preguntas críticas (2–3 preguntas)
-- Pregunta 1 (Semana 3 - riesgo): ___
-- Pregunta 2 (Semana 3 - trazabilidad/evidencia): ___
-- Pregunta 3 (Semana 4 - oráculo/diseño): ___
+- Pregunta 1. Como llegaron a la conclusion del riesgo residual el R2 Robustez que priorizan la integridad de los datos sobre los errores
+- Pregunta 2 ¿En qué escenario realista su enfoque podría dar una falsa sensación de calidad, aun cumpliendo todos sus oráculos
+- Pregunta 3 Si tuvieran un mayor presupuesto para la generacion de pruebas, cambiaria su decision de priorizacion de los 3 top riesgos?
 
 ### C. Recomendaciones accionables (máx. 2)
-- Recomendación 1: ___ (acción concreta y verificable)
-- Recomendación 2: ___ (acción concreta y verificable)
+- Recomendación 1: Validar endpoints de registro de datos
+- Recomendación 2: Validar disponibilidad de campos mínimos versus una plantilla de datos esperados (cuantificable)
 
 ---
 
@@ -31,29 +31,19 @@
 
 ### Semana 3 — Estrategia basada en riesgo
 **Verificar en la presentación:**
-- [ ] Top 3 riesgos están justificados (impacto/probabilidad/score y razón breve)
-- [ ] Existe trazabilidad explícita: **riesgo → escenario → evidencia → oráculo**
-- [ ] La evidencia está referenciada con rutas del repo (ej.: `evidence/week3/...`)
-- [ ] Se declara el **riesgo residual** (qué queda fuera y por qué)
-
-**Preguntas de ejemplo:**
-- ¿Qué evidencia haría **falsa** su afirmación de reducción de riesgo (falsación)?
-- ¿Por qué estos 3 riesgos y no otros? ¿Qué criterio del material teórico sustenta esa decisión?
-- ¿El riesgo residual está explícitamente aceptado o solo omitido?
+- [X] Top 3 riesgos están justificados (impacto/probabilidad/score y razón breve)
+- [X] Existe trazabilidad explícita: **riesgo → escenario → evidencia → oráculo**
+- [X] La evidencia está referenciada con rutas del repo (ej.: `evidence/week3/...`)
+- [X] Se declara el **riesgo residual** (qué queda fuera y por qué)
 
 ---
 
 ### Semana 4 — Diseño sistemático + oráculos
 **Verificar en la presentación:**
-- [ ] Se eligió 1 objeto de prueba (endpoint/función) y se justifica
-- [ ] Técnica sistemática declarada (EQ/BV o pairwise) y coherente con los casos
-- [ ] Hay ≥ 5 reglas de oráculo (mínimas vs estrictas)
-- [ ] Casos y oráculos son trazables a evidencia (ej.: `evidence/week4/...`)
-- [ ] Se reconoce al menos 1 ambigüedad y cómo se resolvió
-
-**Preguntas de ejemplo:**
-- ¿Qué parte del oráculo es “mínima” (segura) y cuál es “estricta”? ¿Por qué?
-- ¿Cómo aseguran que sus casos son “sistemáticos” y no ad-hoc?
-- ¿Qué escenario/riesgo de Semana 3 motivó (o se relaciona con) el objeto de prueba elegido?
+- [X] Se eligió 1 objeto de prueba (endpoint/función) y se justifica
+- [X] Técnica sistemática declarada (EQ/BV o pairwise) y coherente con los casos
+- [X] Hay ≥ 5 reglas de oráculo (mínimas vs estrictas)
+- [X] Casos y oráculos son trazables a evidencia (ej.: `evidence/week4/...`)
+- [X] Se reconoce al menos 1 ambigüedad y cómo se resolvió
 
 ---
