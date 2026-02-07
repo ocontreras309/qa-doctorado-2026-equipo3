@@ -1,5 +1,7 @@
 # Presentación Equipo 3 — Revisión Semanas 3 y 4 (Máx. 6 slides)
 
+[Presentación en Google Slides](https://docs.google.com/presentation/d/1qgysQyxJGwgGd2dR-b8c8FYOlYhsajVsLOYiIzfaXQQ/edit?usp=sharing)
+
 ---
 
 ## Slide 1 — Priorización de riesgos
