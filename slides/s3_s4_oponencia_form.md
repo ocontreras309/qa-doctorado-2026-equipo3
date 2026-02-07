@@ -17,9 +17,9 @@
 - Fortaleza 2: Hay evidencias de todos los casos de pruebas ejecutados para verificar la reproducibilidad del experimento
 
 ### B. Preguntas críticas (2–3 preguntas)
-- Pregunta 1. Como llegaron a la conclusion del riesgo residual el R2 Robustez que priorizan la integridad de los datos sobre los errores
+- Pregunta 1. ¿Como llegaron a la conclusion del riesgo residual el R2 Robustez que priorizan la integridad de los datos sobre los errores?
 - Pregunta 2 ¿En qué escenario realista su enfoque podría dar una falsa sensación de calidad, aun cumpliendo todos sus oráculos
-- Pregunta 3 Si tuvieran un mayor presupuesto para la generacion de pruebas, cambiaria su decision de priorizacion de los 3 top riesgos?
+- Pregunta 3 Si tuvieran un mayor presupuesto para la generacion de pruebas, ¿cambiaría su decisión de priorización de los 3 top riesgos?
 
 ### C. Recomendaciones accionables (máx. 2)
 - Recomendación 1: Validar endpoints de registro de datos
