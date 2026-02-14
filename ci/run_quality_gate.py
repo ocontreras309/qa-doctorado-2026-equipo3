@@ -4,7 +4,6 @@ import requests
 
 from nltk.tokenize import word_tokenize
 from nltk.metrics import jaccard_distance
-from nltk.translate.bleu_score import SmoothingFunction
 
 nltk.download('punkt_tab')
 
@@ -16,7 +15,7 @@ test_responses = ['Hola. ¿En qué puedo ayudarte?',
 
 def run_gate_1(prompt):
     response = requests.post(URL, json.dumps({"data": prompt}), headers={'Content-Type': 'application/json'})
-    return response.status_code == 200, json.dumps(response.json(), ensure_ascii=False)
+    return response.status_code == 200 and 'content' in response.json(), json.dumps(response.json(), ensure_ascii=False)
 
 def run_gate_2(prompt, price_id):
     response = requests.post(URL, json.dumps({"data": prompt}), headers={'Content-Type': 'application/json'})

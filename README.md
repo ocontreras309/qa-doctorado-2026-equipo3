@@ -34,6 +34,15 @@ Ejecute `make` para ver la lista de commandos disponibles.
 
 Si su entorno (SO), no cuenta con con `make` entonces revise y ejecute los scripts de configuración en `setup/`, en el orden conveniente.
 
+Comandos:
+
+- `make setup` permite preparar el entorno de la aplicación
+- `make start-chatbot` Iniciar la aplicación del Chatbot
+- `make healthcheck` Verificar la salud del sistema
+- `make smoke` Ejecutar pruebas de humo
+- `make test-latency` Medir la latencia del sistema
+- `make quality-gate` Ejecutar quality gates
+- `make clean` Limpiar archivos temporales
 
 ## Miembros del Equipo
 
