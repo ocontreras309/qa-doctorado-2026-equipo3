@@ -1,0 +1,48 @@
+name: CI - Puerta de Calidad (Semana 5)
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  puerta-de-calidad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Mostrar versiones de herramientas
+        run: |
+          set -e
+          uname -a
+          make --version
+          curl --version
+
+      - name: Ejecutar Puerta de Calidad vía Make
+        env:
+          # Si el Makefile / scripts leen estas variables, estarán disponibles.
+          SUT_BASE_URL: http://localhost:8080
+          EVIDENCE_DIR: evidence/week5
+        run: |
+          set -e
+          make setup
+          make start-chatbot
+          make quality-gate
+
+      - name: Subir evidencia como artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencia-semana5
+          path: evidence/week5/
+          if-no-files-found: warn
+
+      - name: Detener SUT (mejor esfuerzo)
+        if: always()
+        run: |
+          set +e
+          make stop-chatbot >/dev/null 2>&1 || true

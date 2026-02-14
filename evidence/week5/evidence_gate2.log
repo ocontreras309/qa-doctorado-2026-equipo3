@@ -1,0 +1,4 @@
+Pass/Fail,Response
+PASS,{"content": "El curso de Python tiene un precio de 200 Bs. ¿Necesitas más información al respecto?"}
+PASS,{"content": "El curso de Robótica tiene un precio de 300 Bs. ¿Puedo ayudarte con algo más?"}
+PASS,{"content": "Si deseas matricularte en ambos cursos, el precio total sería de 500 Bs. ¿Hay algo más en lo que pueda ayudarte?"}

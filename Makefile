@@ -11,6 +11,7 @@ help:
 	@echo "  healthcheck    - Verificar la salud del sistema"
 	@echo "  smoke          - Ejecutar pruebas de humo"
 	@echo "  test-latency   - Medir la latencia del sistema"
+	@echo "  quality-gate"  - Ejecutar quality gates
 	@echo "  clean          - Limpiar archivos temporales"
 
 setup:
@@ -32,6 +33,9 @@ smoke:
 
 riskbased:
 	./scripts/riskbased.sh
+
+quality-gate:
+	./ci/run_quality_gate.sh
 
 systematic_cases:
 	python3 ./scripts/tests_cases_execution.py

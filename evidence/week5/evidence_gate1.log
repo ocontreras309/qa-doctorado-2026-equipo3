@@ -1,0 +1,6 @@
+Pass/Fail,Response
+PASS,{"content": "¡Hola! ¿En qué puedo ayudarte hoy?"}
+PASS,{"content": "¡Buen día! ¿En qué puedo ayudarte hoy?"}
+PASS,{"content": "¡Gracias por preguntar! Estoy aquí para ayudarte. ¿En qué puedo asistirte hoy?"}
+PASS,{"content": "Creo que hubo un pequeño error en tu mensaje. ¿En qué puedo ayudarte hoy?"}
+PASS,{"content": "¡Hola! Bienvenido, ¿en qué puedo ayudarte hoy?"}
