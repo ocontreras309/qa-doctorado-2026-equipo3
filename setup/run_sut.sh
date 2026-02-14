@@ -15,7 +15,10 @@ else
     cd ./ChatBotProject
 fi
 
-read -p "OpenAI Key: " KEY
+if [ -z "$OPENAI_API_KEY" ]; then
+    read -p "OpenAI Key: " KEY
+    export OPENAI_API_KEY="$KEY"
+fi
 
 if [ ! -d "./venv" ]; then
     python3 -m venv venv
@@ -23,7 +26,6 @@ fi
 
 source venv/bin/activate
 pip install -r requirements.txt
-export OPENAI_API_KEY=$KEY
 gunicorn backend:app --daemon --pid chatbot.pid
 
 echo "Chatbot application started!"

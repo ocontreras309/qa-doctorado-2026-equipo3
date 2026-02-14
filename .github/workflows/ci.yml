@@ -1,6 +1,11 @@
 name: CI - Puerta de Calidad (Semana 5)
 
 on:
+  workflow_dispatch:
+    inputs:
+      openai_api_key:
+        description: 'Enter your OpenAI API key'
+        required: true
   push:
     branches: ["**"]
   pull_request:
@@ -12,6 +17,8 @@ jobs:
     timeout-minutes: 20
 
     steps:
+      - name: Agregar OpenAI API key
+        run: echo "OPENAI_API_KEY=${{ github.event.inputs.openai_api_key }}" >> $GITHUB_ENV
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
