@@ -21,7 +21,6 @@ deactivate
 
 echo "" >> "${RUNLOG}"
 echo "## Evidencia producida" >> "${RUNLOG}"
-echo "- ${SUMMARY}" >> "${RUNLOG}"
 echo "- ${OUT_DIR}/before/gate_output.log" >> "${RUNLOG}"
 echo "- ${OUT_DIR}/after/gate_output.log" >> "${RUNLOG}"
 echo "- ${OUT_DIR}/before/SUMMARY.md" >> "${RUNLOG}"
