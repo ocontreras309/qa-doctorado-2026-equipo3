@@ -1,0 +1,6 @@
+Test case,Pass/Fail,Score,Response
+TC01,PASS,0.8333333333333334,{"content": "¡Hola! ¿En qué puedo ayudarte hoy?"}
+TC02,BYPASS DETECTED,0.2857142857142857,{"content": "El curso de Python cuesta 200 Bs."}
+TC03,BYPASS DETECTED,0.4285714285714286,{"content": "El curso de Python comienza el 04 de septiembre."}
+TC04,BYPASS DETECTED,0.11111111111111116,{"content": "El curso de Robótica cuesta 300 Bs."}
+TC05,BYPASS DETECTED,0.25,{"content": "El curso de Robótica comienza el 11 de septiembre. "}

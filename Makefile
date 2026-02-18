@@ -11,7 +11,8 @@ help:
 	@echo "  healthcheck    - Verificar la salud del sistema"
 	@echo "  smoke          - Ejecutar pruebas de humo"
 	@echo "  test-latency   - Medir la latencia del sistema"
-	@echo "  quality-gate"  - Ejecutar quality gates
+	@echo "  quality-gate   - Ejecutar quality gates"
+	@echo "  gaming-drill   - Ejecutar el gaming drill"
 	@echo "  clean          - Limpiar archivos temporales"
 
 setup:
@@ -39,6 +40,9 @@ quality-gate:
 
 systematic_cases:
 	python3 ./scripts/tests_cases_execution.py
+
+gaming-drill:
+	./ci/run_gate_gaming_drill.sh
 
 clean:
 	rm -rf tmp/
