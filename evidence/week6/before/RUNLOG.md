@@ -6,7 +6,6 @@
 ## Pasos ejecutados
 
 ## Evidencia producida
-- 
 - evidence/week6/before/gate_output.log
 - evidence/week6/after/gate_output.log
 - evidence/week6/before/SUMMARY.md
