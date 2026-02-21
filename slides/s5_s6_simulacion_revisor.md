@@ -89,7 +89,7 @@
 ## Slide 5 — Goodhart / Gaming (solo si se deriva del texto)
 > Debe basarse en señales explícitas del documento (ej.: "mantener gate verde", "ajustar umbrales", "excepciones", "reruns", etc.)
 
-- Señal en la propuesta (citar): Posibilidad de bajar severidad ante ruido.  
+- Señal en la propuesta (citar): Posibilidad de trabajar con umbrales para los game drills. 
   **Referencia:** Sección 5
 
 ---
