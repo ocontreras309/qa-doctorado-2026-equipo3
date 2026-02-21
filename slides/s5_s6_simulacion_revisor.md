@@ -71,13 +71,18 @@
 - **Sección 7** Costos y cronograma
 
 ### B) Vacíos/ambigüedades que impiden evaluar bien (3-5 puntos)
-- Vacío 1: No se define criterio cuantitativo del gate
+- Vacío 1: Métricas evaluativas del chatbot no consignadas
+
   **Qué falta exactamente:** Umbrales de consistencia del jaccard score del chatbot  
-  **Por qué importa:** Esencial para medir las respuestas coherentes
+  **Por qué importa:** Esencial para medir las respuestas coherentes del modelo
+
 - Vacío 2: Auditoría mensual de excepciones, pero no indica quién la realiza ni con qué criterios.  
+
   **Qué falta exactamente:** Debe haber un responsable de auditoría de parte de la empresa.  
   **Por qué importa:** Necesario por políticas de nuestra organización
+
 - Vacío 3: Procedimiento de integración de las pruebas con los procesos de CI  
+
   **Qué falta exactamente:** No indica qué herramientas se van a usar para integrar los tests en el CI
   **Por qué importa:** Políticas organizacionales requieren este procedimiento.
 
