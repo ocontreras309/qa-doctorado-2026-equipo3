@@ -32,12 +32,12 @@
 - F1: Matriz de riesgo probablidad*riesgo  
   **Evidencia en propuesta:** Sección 4  
   **Por qué es valioso:** Esto permite priorizar los tests a ejecutar en el SUT y también definir los riesgos residuales.
-- F2: Entrega incremental: gate operativo en semana 6 y estabilización en semana 7.  
-  **Evidencia en propuesta:** Sección 7  
-  **Por qué es valioso:** De esta manera, se realiza un seguimiento más efectivo del trabajo que está realizando la emrpesa.
-- F3: Verificación de robustez y disponibilidad  
+- F2: Verificación de robustez
   **Evidencia en propuesta:** Sección 4
   **Por qué es valioso (1 frase):** El chatbot debe responder de manera coherente a preguntas del usuario
+- F3: Entrega incremental: gate operativo en semana 6 y estabilización en semana 7.  
+  **Evidencia en propuesta:** Sección 7  
+  **Por qué es valioso:** De esta manera, se realiza un seguimiento más efectivo del trabajo que está realizando la emrpesa.
 
 ---
 
