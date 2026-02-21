@@ -19,10 +19,10 @@
   - **Sección 4. Fase 2** Clasificación de checks: críticos (must-pass) vs informativos.
   - **Sección 4. Fase 3** Oráculos mínimos para definir pass/fail sin ambigüedad y oráculos estrictos para puntos críticos.
   - **Sección 4** Evidencia por caso y resumen de resultados.
-  - **Ref: Sección 4. Fase 4** Gate CI con checks críticos bloqueantes y publicación de artifacts.
-  - **Ref: Sección 4. Fase 4** Checks no funcionales inicialmente informativos hasta estabilizar baseline.
-  - **Ref: Sección 4. Fase 5** Ajuste de umbrales no funcionales para lograr estabilidad de flujo.
-  - **Ref: Sección 4. Fase 5** Activación de política de excepciones cuando un check no funcional bloquea entregas y existe justificación operativa.
+  - **Sección 4. Fase 4** Gate CI con checks críticos bloqueantes y publicación de artifacts.
+  - **Sección 4. Fase 4** Checks no funcionales inicialmente informativos hasta estabilizar baseline.
+  - **Sección 4. Fase 5** Ajuste de umbrales no funcionales para lograr estabilidad de flujo.
+  - **Sección 4. Fase 5** Activación de política de excepciones cuando un check no funcional bloquea entregas y existe justificación operativa.
 
 ---
 
