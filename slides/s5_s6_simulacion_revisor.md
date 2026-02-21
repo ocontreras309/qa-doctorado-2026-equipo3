@@ -82,7 +82,7 @@
 ### C) Preguntas de aclaración al proveedor (2-4 preguntas)
 - P1: ¿Qué herramientas van a usar para el CI?
 - P2: ¿Qué métricas evaluativas usarán para la coherencia de respuestas del chatbot?
-- P3 :¿Qué criterios cuantitativos determinan que un check no funcional pase de informativo a bloqueante?
+- P3 :¿Podrían adecuar su propuesta económica a nuestras necesidades?
 
 ---
 
