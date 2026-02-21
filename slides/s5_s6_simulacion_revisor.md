@@ -9,20 +9,20 @@
 
 ## Slide 1 — Qué ofrece la propuesta (solo hechos del texto)
 - Objetivo declarado (copiar 1 frase o resumir): Proponer un programa integral basado en evidencia reproducible y gobernanza del quality gate, para sostener calidad continua sin frenar el flujo.
-  **Referencia:** Sección ___
+  **Referencia:** Sección 1
 - Alcance / exclusiones (2+ puntos):
-  - ___ **Ref:** Sección 3 ___ Incluye escenarios (6–10) con evidencia, matriz y estrategia Top 3, diseño sistemático (≥12 casos), oráculos mínimos/estrictos, gate CI con artifacts, política de excepciones y registro de cambios.
-  - ___ **Ref:** Sección 3 ___ Excluye performance a gran escala y pruebas de seguridad especializadas. 
+  - **Sección 3** Incluye escenarios (6–10) con evidencia, matriz y estrategia Top 3, diseño sistemático (≥12 casos), oráculos mínimos/estrictos, gate CI con artifacts, política de excepciones y registro de cambios.
+  - **Sección 3** Excluye performance a gran escala y pruebas de seguridad especializadas. 
 - Entregables principales (3+ puntos):  
-  - ___ **Ref:** Sección 4. Fase 1 ___ Construcción de un baseline reproducible para escenarios básicos (disponibilidad, robustez, consistencia).
-  - ___ **Ref:** Sección 4. Fase 2 ___  Matriz de riesgo impacto×probabilidad, validada en sesión técnica rápida.
-  - ___ **Ref:** Sección 4. Fase 2 ___ Clasificación de checks: críticos (must-pass) vs informativos.
-  - ___ **Ref:** Sección 4. Fase 3 ___ Oráculos mínimos para definir pass/fail sin ambigüedad y oráculos estrictos para puntos críticos.
-- ___ **Ref:** Sección 4. Fase 3 ___ Evidencia por caso y resumen de resultados.
-- ___ **Ref:** Sección 4. Fase 4 ___ Gate CI con checks críticos bloqueantes y publicación de artifacts.
-- ___ **Ref:** Sección 4. Fase 4 ___ Checks no funcionales inicialmente informativos hasta estabilizar baseline.
-- ___ **Ref:** Sección 4. Fase 5 ___ Ajuste de umbrales no funcionales para lograr estabilidad de flujo.
-- ___ **Ref:** Sección 4. Fase 5 ___ Activación de política de excepciones cuando un check no funcional bloquea entregas y existe justificación operativa.
+  - **Sección 4** Construcción de un baseline reproducible para escenarios básicos (disponibilidad, robustez, consistencia).
+  - **Sección 4. Fase 2**  Matriz de riesgo impacto×probabilidad, validada en sesión técnica rápida.
+  - **Sección 4. Fase 2** Clasificación de checks: críticos (must-pass) vs informativos.
+  - **Sección 4. Fase 3** Oráculos mínimos para definir pass/fail sin ambigüedad y oráculos estrictos para puntos críticos.
+- **Sección 4** Evidencia por caso y resumen de resultados.
+- **Ref: Sección 4. Fase 4** Gate CI con checks críticos bloqueantes y publicación de artifacts.
+- **Ref: Sección 4. Fase 4** Checks no funcionales inicialmente informativos hasta estabilizar baseline.
+- **Ref: Sección 4. Fase 5** Ajuste de umbrales no funcionales para lograr estabilidad de flujo.
+- **Ref: Sección 4. Fase 5** Activación de política de excepciones cuando un check no funcional bloquea entregas y existe justificación operativa.
 
 ---
 
