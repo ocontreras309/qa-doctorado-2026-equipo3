@@ -46,12 +46,17 @@
 > Cada debilidad debe citar una sección de la propuesta.
 
 - D1 (Severidad: 4/5): Precio
+
   **Texto/Sección relacionada:** Sección 7
   **Riesgo/impacto (1 frase):** Alto
+
 - D2 (Severidad: 4/5): Propuesta no adecuada para chatbots conversacionales
+
   **Texto/Sección relacionada:** Sección 4  
   **Riesgo/impacto:** Alto
+
 - D3 (Severidad: 3/5): Falta claridad de la estrategia de gaming drill  
+
   **Texto/Sección relacionada:** Sección 4
   **Riesgo/impacto:** Medio-alto
 
