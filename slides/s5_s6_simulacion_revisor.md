@@ -8,7 +8,7 @@
 ---
 
 ## Slide 1 — Qué ofrece la propuesta (solo hechos del texto)
-- Objetivo declarado (copiar 1 frase o resumir): Proponer un programa integral basado en evidencia reproducible y gobernanza del quality gate, para sostener calidad continua sin frenar el flujo.
+- Objetivo declarado: Proponer un programa integral basado en evidencia reproducible y gobernanza del quality gate, para sostener calidad continua sin frenar el flujo.
   **Referencia:** Sección 1
 - Alcance / exclusiones (2+ puntos):
   - **Sección 3** Incluye escenarios (6–10) con evidencia, matriz y estrategia Top 3, diseño sistemático (≥12 casos), oráculos mínimos/estrictos, gate CI con artifacts, política de excepciones y registro de cambios.
