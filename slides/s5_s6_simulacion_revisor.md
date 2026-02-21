@@ -23,6 +23,7 @@
   - **Sección 4. Fase 4** Checks no funcionales inicialmente informativos hasta estabilizar baseline.
   - **Sección 4. Fase 5** Ajuste de umbrales no funcionales para lograr estabilidad de flujo.
   - **Sección 4. Fase 5** Activación de política de excepciones cuando un check no funcional bloquea entregas y existe justificación operativa.
+  - **Sección 7** Plan general de costos y tiempos del proyecto
 
 ---
 
