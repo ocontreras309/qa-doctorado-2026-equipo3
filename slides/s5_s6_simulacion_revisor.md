@@ -46,14 +46,14 @@
 > 3-6 debilidades. Marcar severidad: **Crítica / Mayor / Menor**.
 > Cada debilidad debe citar una sección de la propuesta.
 
-- D1 (Severidad: 4/5): Precio
-
-  **Texto/Sección relacionada:** Sección 7
-  **Riesgo/impacto:** Alto
-
-- D2 (Severidad: 4/5): Propuesta no adecuada para chatbots conversacionales
+- D1 (Severidad: 4/5): Propuesta no adecuada para chatbots conversacionales
 
   **Texto/Sección relacionada:** Sección 4  
+  **Riesgo/impacto:** Alto
+
+- D2 (Severidad: 4/5): Precio
+
+  **Texto/Sección relacionada:** Sección 7
   **Riesgo/impacto:** Alto
 
 - D3 (Severidad: 3/5): Metodología propuesta y oráculos para sistemas transaccionales tradicionales, pero no para NLP
