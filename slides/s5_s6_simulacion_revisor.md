@@ -104,6 +104,6 @@
 ## Slide 7 - Veredicto (decisión final)
 - Decisión: NO
 - Justificación (máximo 3 puntos, conectados a D# o Vacíos):
-  1) Precio fuera de rango (D# / Vacío #)
-  2) No incorpora métricas cuantitativas (D# / Vacío #)
-  3) Continuous integration (D# / Vacío #)
+  1) Precio fuera de rango (D1)
+  2) No incorpora métricas cuantitativas (D2)
+  3) Continuous integration (Vacío 3)
