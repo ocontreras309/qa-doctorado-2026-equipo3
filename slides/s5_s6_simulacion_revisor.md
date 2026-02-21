@@ -7,7 +7,7 @@
 
 ---
 
-## Slide 1 — Qué ofrece la propuesta (solo hechos del texto)
+## Slide 1 — Qué ofrece la propuesta
 - Objetivo declarado: Proponer un programa integral basado en evidencia reproducible y gobernanza del quality gate, para sostener calidad continua sin frenar el flujo.
   **Referencia:** Sección 1
 - Alcance / exclusiones:
