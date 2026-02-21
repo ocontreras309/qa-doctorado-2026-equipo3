@@ -55,7 +55,7 @@
   **Texto/Sección relacionada:** Sección 4  
   **Riesgo/impacto:** Alto
 
-- D3 (Severidad: 3/5): No hay una estrategia basada en NLP y fundamentada en métodos específicos para evaluar chatbots
+- D3 (Severidad: 3/5): Metodología propuesta y oráculos para sistemas transaccionales tradicionales, pero no para NLP
 
   **Texto/Sección relacionada:** Sección 4
   **Riesgo/impacto:** Medio-alto
