@@ -10,10 +10,10 @@
 ## Slide 1 — Qué ofrece la propuesta (solo hechos del texto)
 - Objetivo declarado: Proponer un programa integral basado en evidencia reproducible y gobernanza del quality gate, para sostener calidad continua sin frenar el flujo.
   **Referencia:** Sección 1
-- Alcance / exclusiones (2+ puntos):
+- Alcance / exclusiones:
   - **Sección 3** Incluye escenarios (6–10) con evidencia, matriz y estrategia Top 3, diseño sistemático (≥12 casos), oráculos mínimos/estrictos, gate CI con artifacts, política de excepciones y registro de cambios.
   - **Sección 3** Excluye performance a gran escala y pruebas de seguridad especializadas. 
-- Entregables principales (3+ puntos):  
+- Entregables principales:  
   - **Sección 4** Construcción de un baseline reproducible para escenarios básicos (disponibilidad, robustez, consistencia).
   - **Sección 4. Fase 2**  Matriz de riesgo impacto×probabilidad, validada en sesión técnica rápida.
   - **Sección 4. Fase 2** Clasificación de checks: críticos (must-pass) vs informativos.
@@ -26,7 +26,7 @@
 
 ---
 
-## Slide 2 - Fortalezas (basadas en texto)
+## Slide 2 - Fortalezas
 > 3-5 fortalezas. Cada una debe citar una sección.
 
 - F1: Matriz de riesgo probablidad*riesgo  
@@ -34,21 +34,21 @@
   **Por qué es valioso:** Esto permite priorizar los tests a ejecutar en el SUT y también definir los riesgos residuales.
 - F2: Verificación de robustez
   **Evidencia en propuesta:** Sección 4
-  **Por qué es valioso (1 frase):** El chatbot debe responder de manera coherente a preguntas del usuario
+  **Por qué es valioso:** El chatbot debe responder de manera coherente a preguntas del usuario
 - F3: Entrega incremental: gate operativo en semana 6 y estabilización en semana 7.  
   **Evidencia en propuesta:** Sección 7  
   **Por qué es valioso:** De esta manera, se realiza un seguimiento más efectivo del trabajo que está realizando la emrpesa.
 
 ---
 
-## Slide 3 - Debilidades / riesgos (basadas en texto)
+## Slide 3 - Debilidades / riesgos
 > 3-6 debilidades. Marcar severidad: **Crítica / Mayor / Menor**.
 > Cada debilidad debe citar una sección de la propuesta.
 
 - D1 (Severidad: 4/5): Precio
 
   **Texto/Sección relacionada:** Sección 7
-  **Riesgo/impacto (1 frase):** Alto
+  **Riesgo/impacto:** Alto
 
 - D2 (Severidad: 4/5): Propuesta no adecuada para chatbots conversacionales
 
@@ -64,9 +64,10 @@
 
 ## Slide 4 - Cobertura explícita vs vacíos
 ### A) Lo que la propuesta sí define (3-5 puntos)
-- ___ **Ref:** Sección 7 ___ Costos y cronograma
-- ___ **Ref:** Sección 6 ___ Gobernanza
-- ___ **Ref:** Sección 4 ___ Metodología de trabajo claramente establecida
+
+- **Sección 4** Metodología de trabajo claramente establecida
+- **Sección 6** Gobernanza
+- **Sección 7** Costos y cronograma
 
 ### B) Vacíos/ambigüedades que impiden evaluar bien (3-5 puntos)
 - Vacío 1: No se define criterio cuantitativo del gate
@@ -99,7 +100,7 @@
 
 - C1: Presupuesto  
   **Cómo se verifica:** A través de la propuesta de costos y tiempos
-  **Motivo (D# o Vacío #):** Debilidad 1
+  **Motivo:** Debilidad 1
 - C2: Deben existir métricas cuantitativas para evaluar el modelo
   **Cómo se verifica:** D2
   **Motivo:** No cuenta con métricas cuantitativas.
