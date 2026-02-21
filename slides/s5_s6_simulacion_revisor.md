@@ -55,7 +55,7 @@
   **Texto/Sección relacionada:** Sección 4  
   **Riesgo/impacto:** Alto
 
-- D3 (Severidad: 3/5): Falta claridad de la estrategia de gaming drill  
+- D3 (Severidad: 3/5): No hay una estrategia basada en NLP y fundamentada en métodos específicos para evaluar chatbots
 
   **Texto/Sección relacionada:** Sección 4
   **Riesgo/impacto:** Medio-alto
